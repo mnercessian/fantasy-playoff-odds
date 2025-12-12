@@ -1,0 +1,12 @@
+[project]
+name = "player-playoff-odds"
+version = "0.1.0"
+description = "Fantasy football playoff odds database - query playoff rates by player"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.28.0",
+]
+
+[project.scripts]
+playoff-odds = "main:main"
