@@ -98,7 +98,7 @@ def get_stats() -> dict:
 
 def generate_standalone_html(output_path: Path, data: dict) -> None:
     """Generate a standalone HTML file with embedded data."""
-    template_path = Path(__file__).parent / "index.html"
+    template_path = Path(__file__).parent / "template.html"
     
     with open(template_path) as f:
         html = f.read()
@@ -146,7 +146,7 @@ if __name__ == "__main__":
     print(f"Saved JSON to {output_path}")
     
     # Generate standalone HTML
-    html_path = Path(__file__).parent / "playoff_odds.html"
+    html_path = Path(__file__).parent / "index.html"
     generate_standalone_html(html_path, output)
     print(f"Saved standalone HTML to {html_path}")
 
